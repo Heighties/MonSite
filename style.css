@@ -246,6 +246,10 @@ header .navbar ul li a:hover {
   width: 100%;
 }
 
+.contact .row form .box::placeholder {
+  text-transform: capitalize;
+}
+
 .contact .row form .message {
   height: 15rem;
   resize: none;
