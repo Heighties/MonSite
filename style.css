@@ -156,6 +156,8 @@ header .navbar ul li a:hover {
   display: none;
 }
 
+/*********************Presentation******************/
+
 .home {
   display: flex;
   justify-content: center;
@@ -190,6 +192,12 @@ header .navbar ul li a:hover {
   flex-wrap: wrap;
 }
 
+.home .btn {
+  display: flex;
+  justify-content: center;
+}
+/******************A propos de moi*********************/
+
 .about .row {
   display: flex;
   align-items: center;
@@ -215,6 +223,8 @@ header .navbar ul li a:hover {
   color: #eee;
   padding: 0 0.5rem;
 }
+
+/*********************Contact*************************/
 
 .contact .row {
   display: flex;
