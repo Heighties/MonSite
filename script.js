@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
 
     $('#menu').click(function(){
@@ -10,6 +12,8 @@ $(document).ready(function(){
         $('header').removeClass('toggle');
 
     });
+
+   /* 
 
     //smooth scrolling
 
@@ -30,4 +34,4 @@ $(document).ready(function(){
 
     });
 
-});
+}); */

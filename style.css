@@ -25,6 +25,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {
@@ -104,6 +105,7 @@ header .user img {
   object-fit: cover;
   margin-bottom: 1rem;
   border: 0.7rem solid var(--deepskyblue);
+  box-shadow: -0.4rem 0.4rem #333;
 }
 
 header .user .name {
@@ -146,11 +148,12 @@ header .navbar ul li a:hover {
 }
 
 .lang {
-  height: 2rem;
-  width: 3rem;
+  height: 1.7rem;
+  width: 2.7rem;
   position: absolute;
   top: 15px;
   left: 25px;
+  box-shadow: -0.2rem 0.2rem #333;
 }
 
 #menu {
@@ -238,11 +241,13 @@ header .navbar ul li a:hover {
   padding: 0 0.5rem;
 }
 
-.images {
+.about .images {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
   flex-wrap: wrap;
+  padding: 2rem;
+  margin: 2rem;
 }
 .bloc1 {
   margin-right: 24rem;
@@ -329,6 +334,7 @@ header .navbar ul li a:hover {
   color: #eee;
   padding: 1rem 0;
   font-weight: normal;
+  text-transform: none;
 }
 
 .contact .row .content .info h3 i {
