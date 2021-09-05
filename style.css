@@ -18,7 +18,7 @@
 }
 
 *::selection {
-  background: var(--yellow);
+  background: var(--deepskyblue);
   color: #333;
 }
 
@@ -47,6 +47,8 @@ section {
   min-height: 100vh;
   padding: 1rem;
 }
+
+/********* Bouton présentation *************/
 
 .btn {
   padding: 1.3rem 3rem;
@@ -222,6 +224,39 @@ header .navbar ul li a:hover {
 .about .row .info span {
   color: #eee;
   padding: 0 0.5rem;
+}
+
+.images {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.bloc1 {
+  margin-right: 30rem;
+  margin-top: -30rem;
+}
+.bloc2 {
+  margin-right: 32rem;
+  margin-top: 3rem;
+}
+
+.java {
+  height: 18rem;
+  width: 10rem;
+  margin-right: 20rem;
+}
+.javascript {
+  height: 15rem;
+  width: 15rem;
+}
+.html {
+  height: 15rem;
+  width: 13rem;
+  margin-right: 22rem;
+}
+.css {
+  height: 15rem;
+  width: 9rem;
 }
 
 /*********************Contact*************************/
