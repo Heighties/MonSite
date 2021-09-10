@@ -219,6 +219,7 @@ header .navbar ul li a:hover {
   justify-content: space-between;
   width: 100%;
   max-width: 100%;
+  flex-wrap: wrap;
 }
 
 .about .row {
@@ -227,7 +228,6 @@ header .navbar ul li a:hover {
   justify-content: center;
   flex-wrap: wrap;
   padding: 1rem;
-  width: 50%;
 }
 
 .about .row .info {
@@ -250,16 +250,41 @@ header .navbar ul li a:hover {
 
 .about .images {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   padding: 2rem;
   margin: 2rem;
-  width: 25%;
+  flex-direction: column;
+  flex: 1;
 }
 
-.image {
-  width: 35%;
+.top,
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top {
+  margin-bottom: 15px;
+}
+
+.logojava {
+  height: 12rem;
+  margin-right: 5rem;
+}
+
+.logojs {
+  height: 10rem;
+  margin-left: 5rem;
+}
+
+.logohtml {
+  height: 10rem;
+  margin-right: 10rem;
+}
+
+.logocss {
+  height: 10.2rem;
+  margin-right: 2.9rem;
 }
 
 /*********************Contact*************************/
@@ -274,14 +299,14 @@ header .navbar ul li a:hover {
 .contact .row .content {
   flex: 1 1 30rem;
   padding: 4rem;
-  padding-bottom: 0;
+  padding-bottom: 4;
 }
 
 .contact .row form {
   flex: 1 1 45rem;
   padding: 2rem;
   margin: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .contact .row form .box {
@@ -325,6 +350,13 @@ header .navbar ul li a:hover {
   color: var(--deepskyblue);
 }
 
+.sctop {
+  position: fixed;
+  bottom: 4.5rem;
+  right: 2rem;
+  z-index: 100;
+}
+
 /*media queries*/
 @media (max-width: 1200px) {
   html {
@@ -359,7 +391,7 @@ header .navbar ul li a:hover {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 650px) {
   header {
     width: 100vw;
   }

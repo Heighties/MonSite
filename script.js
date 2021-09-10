@@ -11,6 +11,14 @@ $(document).ready(function(){
         $('#menu').removeClass('fa-times');
         $('header').removeClass('toggle');
 
+        if($(window).scrollTop() > 0){
+            $('.sctop').show();
+        }
+        else{
+            $('.sctop').hide();
+
+        }
+
     });
 
    
