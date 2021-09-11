@@ -31,9 +31,9 @@
 
       <nav class="navbar">
         <ul>
-          <li><a href="#home">accueil</a></li>
-          <li><a href="#about">à propos</a></li>
-          <li><a href="#contact">me contacter</a></li>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#contact">Me contacter</a></li>
         </ul>
 
         <div id="icons">
@@ -58,7 +58,9 @@
 
     <section class="home" id="home">
       <h3 class="bienvue reveal-1">Bienvenue !</h3>
-      <h1 class="myname reveal-2">Je m'appelle <span>Geoffrey</span></h1>
+      <h1 class="myname reveal-2">
+        Je m'appelle <span class="geoff reveal-s">Geoffrey</span>
+      </h1>
       <p class="para reveal-3">
         Passionné par l'informatique et entièrement autodidacte, je souhaiterai
         me professionnaliser dans le développement en approfondissant mes
@@ -71,7 +73,7 @@
       <div>
         <a href="#about"
           ><button class="btn reveal-4">
-            à propos de moi<i class="fa fa-user"></i></button
+            À propos de moi<i class="fa fa-user"></i></button
         ></a>
       </div>
     </section>
@@ -81,7 +83,7 @@
     <!--about section starts-->
 
     <section class="about" id="about">
-      <h1 class="heading reveal-1"><span>à propos</span> de moi</h1>
+      <h1 class="heading reveal-1"><span>À propos</span> de moi</h1>
       <div class="sectionContainer">
         <div class="row">
           <div class="info reveal-2">
@@ -107,6 +109,11 @@
           </div>
         </div>
       </div>
+
+      <div class="effet">
+        <h4 class="reveal-2">Je suis</h4>
+        <!--<h1 id="target" class="reveal-s"></h1>-->
+      </div>
     </section>
 
     <!--about section ends-->
@@ -126,18 +133,18 @@
         </div>
 
         <form action="">
-          <input type="text" placeholder="nom" class="box reveal-3" />
-          <input type="email" placeholder="email" class="box reveal-3" />
-          <input type="text" placeholder="objet" class="box reveal-3" />
+          <input type="text" placeholder="nom" class="box reveal-2" />
+          <input type="email" placeholder="email" class="box reveal-2" />
+          <input type="text" placeholder="objet" class="box reveal-2" />
           <textarea
             name=""
             id=""
             cols="30"
             rows="10"
-            class="box message reveal-3"
+            class="box message reveal-2"
             placeholder="message"
           ></textarea>
-          <button type="submit" class="btn reveal-4">
+          <button type="submit" class="btn reveal-3">
             envoyer <i class="fa fa-paper-plane"></i>
           </button>
         </form>
@@ -152,6 +159,7 @@
 
     <!--jquery cdn link-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
     <!--custom js file link-->
     <script src="script.js"></script>
