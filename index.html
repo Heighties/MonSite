@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="widht=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geoffrey Pignet</title>
 
     <!--font awesome cdn link-->
@@ -12,17 +12,85 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     />
+    <!--couleur par défaut-->
+    <link rel="stylesheet" type="text/css" href="css/skins/color-1.css" />
+    <!--style de couleur-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      class="alternate-style"
+      title="color1"
+      href="css/skins/color-1.css"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      class="alternate-style"
+      title="color2"
+      href="css/skins/color-2.css"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      class="alternate-style"
+      title="color3"
+      href="css/skins/color-3.css"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      class="alternate-style"
+      title="color4"
+      href="css/skins/color-4.css"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      class="alternate-style"
+      title="color5"
+      href="css/skins/color-5.css"
+      disabled
+    />
 
     <link
       rel="stylesheet"
-      href="href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      type="text/css"
+      href="css/style/style-switcher.css"
     />
+
+    <!--<link
+      rel="stylesheet"
+      href="href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />-->
 
     <!--custom css file link-->
   </head>
   <body>
     <!--header section starts-->
     <header>
+      <!-- style switcher start-->
+      <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+          <i class="fa fa-cog"></i>
+        </div>
+        <div class="day-night s-icon">
+          <i class="fa fa-moon-o"></i>
+        </div>
+        <h5>Theme</h5>
+        <div class="colors">
+          <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+          <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+          <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+          <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+          <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+      </div>
+      <!-- style switcher end-->
+
       <div class="user">
         <img src="images/geoff2.jpg" alt="" />
         <h3 class="name">Geoffrey Pignet</h3>

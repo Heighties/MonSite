@@ -70,7 +70,7 @@ document.querySelectorAll('[class*="reveal-"]').forEach(function(r){
 })
 
 
-//effet dans about me
+//typeWriter
 
 
 var txtAnim = document.querySelector('h4');
@@ -93,7 +93,7 @@ new Typewriter(txtAnim, {
 .pauseFor(1000)
 .deleteChars(9)
 .typeString('<span style="color :#00bfff">\ passionné</span>')
-.pauseFor(4000)
+.pauseFor(2000)
 .start()
 
 var txtAnim = document.querySelector('h1');
@@ -104,5 +104,32 @@ new Typewriter(txtAnim, {
 .changeDelay(100)
 .typeString('<span style="color : #eee">Je m\'appelle</span> Geoffrey')
 .start()
+
+
+
+//toggle style switcher
+
+const styleSwitcherToggler = document.querySelector(".style-switcher-toggler");
+styleSwitcherToggler.addEventListener("click", () =>{
+    document.querySelector(".style-switcher").classList.toggle("open");
+})
+
+
+//theme colors
+
+const alternateStyles = document.querySelectorAll('.alternate-style');
+
+function setActiveStyle(color){
+    alternateStyles.forEach((style) =>{
+        if(color === style.getAttribute('title')){
+            style.removeAttribute('disabled');
+        }
+        else{
+            style.setAttribute('disabled', 'true');
+        }
+    })
+}
+
+//theme light and dark mode
 
 
