@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
 
-:root {
-  --deepskyblue: #00bfff;
-}
-
 * {
   font-family: "Nunito", sans-serif;
   margin: 0;
@@ -33,7 +29,7 @@ html::-webkit-scrollbar-track {
   background: #222;
 }
 html::-webkit-scrollbar-thumb {
-  background: var(--deepskyblue);
+  background: var(--skin-color);
 }
 
 body {
@@ -65,7 +61,7 @@ section {
 }
 
 .btn:hover {
-  background: var(--deepskyblue);
+  background: var(--skin-color);
   transition: 0.1s;
 }
 
@@ -79,7 +75,7 @@ section {
 }
 
 .heading span {
-  color: var(--deepskyblue);
+  color: var(--skin-color);
 }
 
 header {
@@ -187,7 +183,7 @@ header .user img {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
-  border: 0.7rem solid var(--deepskyblue);
+  border: 0.7rem solid var(--skin-color);
   box-shadow: -0.4rem 0.4rem #333;
 }
 
@@ -217,7 +213,7 @@ header .navbar ul li a {
 }
 
 header .navbar ul li a:hover {
-  background: var(--deepskyblue);
+  background: var(--skin-color);
 }
 
 #icons a {
@@ -227,7 +223,7 @@ header .navbar ul li a:hover {
   color: #fff;
 }
 #icons a:hover {
-  color: var(--deepskyblue);
+  color: var(--skin-color);
 }
 
 .lang {
@@ -274,7 +270,7 @@ header .navbar ul li a:hover {
 }
 
 .home h1 span {
-  color: var(--deepskyblue);
+  color: var(--skin-color);
 }
 
 .home p {
@@ -322,7 +318,7 @@ header .navbar ul li a:hover {
 
 .about .row .info h3 {
   font-size: 2rem;
-  color: var(--deepskyblue);
+  color: var(--skin-color);
   padding: 1rem 0;
   font-weight: normal;
 }
@@ -464,7 +460,7 @@ h4 {
 
 .contact .row .content .info h3 i {
   padding-right: 1rem;
-  color: var(--deepskyblue);
+  color: var(--skin-color);
 }
 
 /*scroll top*/

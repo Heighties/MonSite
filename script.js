@@ -83,16 +83,16 @@ new Typewriter(txtAnim, {
 .typeString('Je suis')
 .pauseFor(300)
 .changeDelay(100)
-.typeString('<span style="color :#00bfff">\ curieux</span>')
+.typeString('<span style="color :var(--skin-color)">\ curieux</span>')
 .pauseFor(1000)
 .deleteChars(7)
-.typeString('<span style="color :#00bfff"> \ créatif</span>')
+.typeString('<span style="color :var(--skin-color)"> \ créatif</span>')
 .pauseFor(1000)
 .deleteChars(7)
-.typeString('<span style="color :#00bfff"> \ ambitieux</span>')
+.typeString('<span style="color :var(--skin-color)"> \ ambitieux</span>')
 .pauseFor(1000)
 .deleteChars(9)
-.typeString('<span style="color :#00bfff">\ passionné</span>')
+.typeString('<span style="color :var(--skin-color)">\ passionné</span>')
 .pauseFor(2000)
 .start()
 
@@ -106,30 +106,5 @@ new Typewriter(txtAnim, {
 .start()
 
 
-
-//toggle style switcher
-
-const styleSwitcherToggler = document.querySelector(".style-switcher-toggler");
-styleSwitcherToggler.addEventListener("click", () =>{
-    document.querySelector(".style-switcher").classList.toggle("open");
-})
-
-
-//theme colors
-
-const alternateStyles = document.querySelectorAll('.alternate-style');
-
-function setActiveStyle(color){
-    alternateStyles.forEach((style) =>{
-        if(color === style.getAttribute('title')){
-            style.removeAttribute('disabled');
-        }
-        else{
-            style.setAttribute('disabled', 'true');
-        }
-    })
-}
-
-//theme light and dark mode
 
 
