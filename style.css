@@ -32,6 +32,110 @@ html::-webkit-scrollbar-thumb {
   background: var(--skin-color);
 }
 
+/*light mode*/
+
+body.light {
+  background: #cac7cc;
+}
+
+body.light header {
+  background-color: #b8b8b8;
+}
+
+body.light header .user h3 {
+  color: #222;
+}
+
+body.light header .user p {
+  color: #222;
+}
+
+body.light header .navbar ul li a {
+  background-color: #8c8b8b;
+  color: #222;
+}
+
+body.light header .navbar ul li a:hover {
+  background: var(--skin-color);
+}
+
+body.light header #icons a {
+  color: #222;
+}
+
+body.light header #icons a :hover {
+  color: var(--skin-color);
+}
+
+body.light header .style-switcher {
+  background: #8c8c8c;
+}
+
+body.light header .style-switcher .s-icon {
+  background: #8c8b8b;
+  color: #222;
+}
+
+body.light header .style-switcher h5 {
+  color: #222;
+}
+
+body.light .home h1 {
+  color: #222;
+}
+
+body.light h1 {
+  color: #222;
+}
+
+body.light h3 {
+  color: #222;
+}
+
+body.light h4 {
+  color: #222;
+}
+
+body.light p {
+  color: #222;
+}
+
+body.light .btn {
+  background-color: #8c8b8b;
+  color: black;
+}
+
+body.light .btn:hover {
+  background-color: var(--skin-color);
+}
+
+body.light .about {
+  color: #222;
+}
+
+body.light .about .heading {
+  color: #222;
+}
+
+body.light .about .row .info span {
+  color: #222;
+}
+
+body.light .contact .row form .box {
+  background: #8c8b8b;
+  color: #222;
+}
+
+body.light .contact .row .content .title {
+  color: #222;
+}
+
+body.light .contact .row .content .info h3 {
+  color: #222;
+}
+
+/*light mode end*/
+
 body {
   background: #222;
   overflow-x: hidden;
@@ -174,7 +278,7 @@ header {
   background-color: #cc3a3b;
 }
 .style-switcher .color-5 {
-  background-color: #fb839e;
+  background-color: #a963d7;
 }
 
 header .user img {
