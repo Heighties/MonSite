@@ -536,10 +536,11 @@ h4 {
   z-index: 10;
   top: 0;
   right: 0;
-  background-color: #111;
+  background-color: #3c4043;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  border-left: 0.2rem solid var(--skin-color);
 }
 
 .sidenav a {
@@ -552,15 +553,22 @@ h4 {
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: var(--skin-color);
 }
 
 .closebtn {
   position: absolute;
-  top: 10;
-  left: 200px;
+  top: 0;
+  left: 0rem;
   font-size: 36px;
-  margin-left: 50px;
+  margin-left: 0rem;
+}
+
+.chrono2 {
+  max-width: 800px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-height: 450px) {
@@ -578,21 +586,38 @@ h4 {
   width: 360px;
   height: 200px;
   margin-top: 2rem;
-  overflow: hidden;
-  border: 0.4rem solid var(--skin-color);
-}
-
-.box1-2 {
-  width: 100%;
-  height: 100%;
   background-image: url(images/chrono.png);
   background-size: cover;
   background-position: center;
-  transition: transform ease 0.3s;
+  border: 0.4rem solid var(--skin-color);
 }
 
-.box1-2:hover {
-  transform: scale(1.5);
+.overlay {
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--skin-color);
+  overflow: hidden;
+  opacity: 0.5;
+  background-size: cover;
+  background-position: center;
+  transition: ease 0.5s;
+  text-align: center;
+}
+
+.overlay #plus {
+  color: white;
+  font-size: 10rem;
+  text-align: center;
+
+  margin-top: 15%;
+  opacity: 1;
+}
+
+.box1:hover .overlay {
+  height: 100%;
 }
 
 .box2 {

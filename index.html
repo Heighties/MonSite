@@ -198,13 +198,15 @@
       <h1 class="heading reveal-1">Mes <span>projets</span></h1>
 
       <div id="mySidenav" class="sidenav">
-        <div class="closebtn" onclick="closeNav()"></div>
-        <img src="images/chrono.png" />
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <img src="images/chrono.png" class="chrono2" />
       </div>
 
       <div class="screens reveal-3">
         <div class="box1" style="cursor: pointer" onclick="openNav()">
-          <div class="box1-2"></div>
+          <div class="overlay"><div id="plus" class="fa fa-plus"></div></div>
         </div>
         <div class="box2"></div>
         <div class="box3"></div>
