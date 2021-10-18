@@ -2,13 +2,13 @@
 $(document).ready(function(){
 
     $('#menu').click(function(){
-        $(this).toggleClass('fa-times-rectangle');
+        $(this).toggleClass('fa-times');
         $('header').toggleClass('toggle');
     });
 
     $(window).on('scroll load', function(){
        
-        $('#menu').removeClass('fa-times-rectangle');
+        $('#menu').removeClass('fa-times');
         $('header').removeClass('toggle');
 
         if($(window).scrollTop() > 0){
@@ -134,17 +134,17 @@ function setActiveStyle(color){
 const dayNight = document.querySelector(".day-night");
 
 dayNight.addEventListener("click", () =>{
-    dayNight.querySelector("i").classList.toggle("fa-moon-o");
-    dayNight.querySelector("i").classList.toggle("fa-sun-o");
+    dayNight.querySelector("i").classList.toggle("fa-moon");
+    dayNight.querySelector("i").classList.toggle("fa-sun");
     document.body.classList.toggle("light");
 })
 
 window.addEventListener("load", () =>{
     if(document.body.classList.contains("light")){
-        dayNight.querySelector("i").classList.add("fa-moon-o");
+        dayNight.querySelector("i").classList.add("fa-moon");
     }
     else{
-        dayNight.querySelector("i").classList.add("fa-sun-o");
+        dayNight.querySelector("i").classList.add("fa-sun");
     }
 
     
