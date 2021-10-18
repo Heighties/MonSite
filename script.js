@@ -1,14 +1,14 @@
 
-
 $(document).ready(function(){
 
     $('#menu').click(function(){
-        $(this).toggleClass('fa-times');
+        $(this).toggleClass('fa-times-rectangle');
         $('header').toggleClass('toggle');
     });
+
     $(window).on('scroll load', function(){
        
-        $('#menu').removeClass('fa-times');
+        $('#menu').removeClass('fa-times-rectangle');
         $('header').removeClass('toggle');
 
         if($(window).scrollTop() > 0){
@@ -21,7 +21,6 @@ $(document).ready(function(){
 
     });
 
-   
 
     //smooth scrolling
 
